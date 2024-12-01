@@ -59,6 +59,7 @@ class AuthenticatedReddit(Reddit):
         try:
             os.dup2(null, 1)
             os.dup2(null, 2)
+            print(url)
             webbrowser.open_new_tab(url)
         finally:
             try:
